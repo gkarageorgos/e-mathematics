@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{313894B5-0D76-49AB-98EB-8B51E4CAD864}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>e_math</RootNamespace>
+    <AssemblyName>e-math</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.117.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.117.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.117.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.117.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.117.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chapter1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter1Form.Designer.cs">
+      <DependentUpon>Chapter1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter1TheoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter1TheoryForm.Designer.cs">
+      <DependentUpon>Chapter1TheoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter2Form.Designer.cs">
+      <DependentUpon>Chapter2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter2TheoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter2TheoryForm.Designer.cs">
+      <DependentUpon>Chapter2TheoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter3Form.Designer.cs">
+      <DependentUpon>Chapter3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter3TheoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter3TheoryForm.Designer.cs">
+      <DependentUpon>Chapter3TheoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter4Form.Designer.cs">
+      <DependentUpon>Chapter4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter4TheoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter4TheoryForm.Designer.cs">
+      <DependentUpon>Chapter4TheoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter5Form.Designer.cs">
+      <DependentUpon>Chapter5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter5TheoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter5TheoryForm.Designer.cs">
+      <DependentUpon>Chapter5TheoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter6Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter6Form.Designer.cs">
+      <DependentUpon>Chapter6Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter6TheoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chapter6TheoryForm.Designer.cs">
+      <DependentUpon>Chapter6TheoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntryForm.Designer.cs">
+      <DependentUpon>EntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroductionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroductionForm.Designer.cs">
+      <DependentUpon>IntroductionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newTaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newTaskForm.Designer.cs">
+      <DependentUpon>newTaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Score.cs" />
+    <Compile Include="TeacherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherForm.Designer.cs">
+      <DependentUpon>TeacherForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Chapter1Form.resx">
+      <DependentUpon>Chapter1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter1TheoryForm.resx">
+      <DependentUpon>Chapter1TheoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter2Form.resx">
+      <DependentUpon>Chapter2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter2TheoryForm.resx">
+      <DependentUpon>Chapter2TheoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter3Form.resx">
+      <DependentUpon>Chapter3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter3TheoryForm.resx">
+      <DependentUpon>Chapter3TheoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter4Form.resx">
+      <DependentUpon>Chapter4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter4TheoryForm.resx">
+      <DependentUpon>Chapter4TheoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter5Form.resx">
+      <DependentUpon>Chapter5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter5TheoryForm.resx">
+      <DependentUpon>Chapter5TheoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter6Form.resx">
+      <DependentUpon>Chapter6Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chapter6TheoryForm.resx">
+      <DependentUpon>Chapter6TheoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntryForm.resx">
+      <DependentUpon>EntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroductionForm.resx">
+      <DependentUpon>IntroductionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newTaskForm.resx">
+      <DependentUpon>newTaskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherForm.resx">
+      <DependentUpon>TeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\book.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+</Project>
