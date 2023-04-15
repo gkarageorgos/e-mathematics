@@ -13,7 +13,8 @@ namespace e_math
         private SQLiteConnection conn;
         private SQLiteDataReader reader;
         private int[] arr = new int[6];
-        public void select(String username)
+        private Boolean changeLevel = false;
+        public void selectedUser(String username)
         {
             //Parameterized query
             String selectSQL = "Select * from User where username=@username";
@@ -23,31 +24,43 @@ namespace e_math
         }
         public void update(String username, int score, int i)
         {
-            int level = 1;
-            Boolean changeLevel = false;
-            if (MainForm.instance.score > 90)
-            {
-                changeLevel =!changeLevel;
-                level = 1;
-            }
             MainForm.instance.score -= MainForm.instance.scores[i - 1];
             MainForm.instance.scores[i - 1] = score;
             MainForm.instance.score += MainForm.instance.scores[i - 1];
             if (MainForm.instance.score > 90)
             {
-                changeLevel = !changeLevel;
-                level = 2;
+                if (MainForm.instance.level == 1)
+                {
+                    changeLevel = !changeLevel;
+                }
+                if (changeLevel)
+                {
+                    MainForm.instance.level = 2;
+                    MainForm.instance.label3.Visible = false;
+                    MainForm.instance.level2Button.Visible = true;
+                }
+            }
+            else
+            {
+                if (MainForm.instance.level == 2)
+                {
+                    changeLevel = !changeLevel;
+                }
+                if (changeLevel)
+                {
+                    MainForm.instance.level = 1;
+                    MainForm.instance.label3.Visible = true;
+                    MainForm.instance.level2Button.Visible = false;
+                }
             }
             if (changeLevel)
             {
                 //Parameterized query
                 String updateSQL1 = "Update User Set level=@level where username=@username";
                 SQLiteCommand cmd1 = new SQLiteCommand(updateSQL1, conn);
-                cmd1.Parameters.AddWithValue("@level", level);
+                cmd1.Parameters.AddWithValue("@level", MainForm.instance.level);
                 cmd1.Parameters.AddWithValue("@username", username);
                 cmd1.ExecuteNonQuery();
-                MainForm.instance.label3.Visible = false;
-                MainForm.instance.level2Button.Visible = true;
             }
             MainForm.instance.scoreTextBox.Text = MainForm.instance.score.ToString();
             //Parameterized query
@@ -66,13 +79,20 @@ namespace e_math
                     arr[i] = reader.GetInt32(i + 3);
                 }
             }
-            reader.Close();
             return arr;
+        }
+        public int the_level_of_the_user()
+        {
+            return reader.GetInt32(9);
         }
         public void openConnection()
         {
             conn = new SQLiteConnection(connectionString);
             conn.Open();
+        }
+        public void closeReader()
+        {
+            reader.Close();
         }
         public void closeConnection()
         {

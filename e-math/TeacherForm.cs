@@ -34,8 +34,9 @@ namespace e_math
                 ListViewItem item = new ListViewItem(reader.GetString(0));
                 Score s = new Score();
                 s.openConnection();
-                s.select(reader.GetString(0));
+                s.selectedUser(reader.GetString(0));
                 scores = s.arrayInitialization();
+                s.closeReader();
                 s.closeConnection();
                 for (int i = 0; i < 6; i++)
                 {

@@ -78,7 +78,7 @@ namespace e_math
             this.chapter5Button.Name = "chapter5Button";
             this.chapter5Button.Size = new System.Drawing.Size(194, 168);
             this.chapter5Button.TabIndex = 4;
-            this.chapter5Button.Text = "Πολλαπλασιασμός κλασμάτων";
+            this.chapter5Button.Text = "Πολ/σμος κλασμάτων";
             this.chapter5Button.UseVisualStyleBackColor = false;
             this.chapter5Button.Click += new System.EventHandler(this.chapter5Button_Click);
             // 
@@ -215,14 +215,13 @@ namespace e_math
             // 
             this.level2Button.BackColor = System.Drawing.Color.White;
             this.level2Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.level2Button.ForeColor = System.Drawing.Color.Red;
+            this.level2Button.ForeColor = System.Drawing.Color.Purple;
             this.level2Button.Location = new System.Drawing.Point(263, 565);
             this.level2Button.Name = "level2Button";
             this.level2Button.Size = new System.Drawing.Size(207, 90);
             this.level2Button.TabIndex = 8;
             this.level2Button.Text = "Επίπεδο 2";
             this.level2Button.UseVisualStyleBackColor = false;
-            this.level2Button.Visible = false;
             this.level2Button.Click += new System.EventHandler(this.level2Button_Click);
             // 
             // MainForm
@@ -240,6 +239,7 @@ namespace e_math
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

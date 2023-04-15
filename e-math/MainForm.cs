@@ -17,16 +17,29 @@ namespace e_math
         private String username;
         public int[] scores = new int[6];
         public int score;
+        public int level;
         private void MainForm_Load(object sender, EventArgs e)
         {
             usernameTextBox.Text = username;
             Score s = new Score();
             s.openConnection();
-            s.select(username);
+            s.selectedUser(username);
             scores = s.arrayInitialization();
+            level = s.the_level_of_the_user();
+            s.closeReader();
             s.closeConnection();
             score = s.totalScore(scores);
             scoreTextBox.Text = score.ToString();
+            if (level == 1)
+            {
+                label3.Visible = true;
+                level2Button.Visible = false;
+            }
+            else
+            {
+                label3.Visible = false;
+                level2Button.Visible = true;
+            }
         }
 
         public MainForm(String username)
@@ -74,6 +87,11 @@ namespace e_math
         private void level2Button_Click(object sender, EventArgs e)
         {
             new newTaskForm(username).Show();
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

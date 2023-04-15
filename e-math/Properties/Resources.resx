@@ -130,4 +130,10 @@
   <data name="chapter5_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\homework\chapter5-3.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1253</value>
   </data>
+  <data name="chapter6_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\homework\chapter6-2.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1253</value>
+  </data>
+  <data name="chapter6_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\homework\chapter6-3.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1253</value>
+  </data>
 </root>
