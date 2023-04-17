@@ -23,7 +23,7 @@ namespace e_math
         {
             pictureBox1.ImageLocation = "..//..//pictures/kyklos.png";
             usernameTextBox.Text = username;
-            scoreTextBox.Text = MainForm.instance.scores[0].ToString();
+            scoreTextBox.Text = MainForm.instance.Scores[0].ToString();
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -42,10 +42,10 @@ namespace e_math
                 score1 += 10;
             }
             scoreTextBox.Text = score1.ToString();
-            Score s = new Score();
-            s.openConnection();
-            s.update(username, score1, 1);
-            s.closeConnection();
+            MainForm.instance.openConnection();
+            MainForm.instance.update_Score(score1, 1);
+            MainForm.instance.update_Level();
+            MainForm.instance.closeConnection();
         }
     }
 }

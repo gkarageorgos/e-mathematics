@@ -21,8 +21,7 @@ namespace e_math
 
         private void answerButton_Click(object sender, EventArgs e)
         {
-            Score s = new Score();
-            int score = s.totalScore(MainForm.instance.scores);
+            int score = new Score().userData(username)[6];
             if (answer1TextBox.Text == "64")
             {
                 score += 8;
@@ -51,8 +50,14 @@ namespace e_math
             {
                 score += 6;
             }
-            MainForm.instance.score = score;
-            MainForm.instance.scoreTextBox.Text = MainForm.instance.score.ToString();
+            MainForm.instance.openConnection();
+            MainForm.instance.update_Score(score, 0);
+            MainForm.instance.update_Level();
+            MainForm.instance.closeConnection();
+            if (MainForm.instance.Level == 1)
+            {
+                this.Close();
+            }
         }
 
         private void newTaskForm_Load(object sender, EventArgs e)

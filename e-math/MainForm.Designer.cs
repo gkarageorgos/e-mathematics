@@ -253,7 +253,7 @@ namespace e_math
         private System.Windows.Forms.Button chapter1Button;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox usernameTextBox;
-        public System.Windows.Forms.TextBox scoreTextBox;
+        private System.Windows.Forms.TextBox scoreTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button chapter2Button;
         private System.Windows.Forms.Button chapter3Button;
@@ -262,7 +262,7 @@ namespace e_math
         private System.Windows.Forms.Button chapter6Button;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button theoryButton;
-        public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.Button level2Button;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button level2Button;
     }
 }

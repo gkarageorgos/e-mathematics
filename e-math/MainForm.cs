@@ -13,22 +13,31 @@ namespace e_math
 {
     public partial class MainForm : Form
     {
+        private String connectionString = "Data source=..\\..\\e-math.db;Version=3";
+        private SQLiteConnection conn;
         internal static MainForm instance;
         private String username;
-        internal int[] scores = new int[6];
-        internal int score;
-        internal int level;
+        private int[] scores = new int[6];
+        private int score;
+        private int level;
+        internal int[] Scores
+        {
+            get { return scores; }
+        }
+        internal int Level
+        {
+            get { return level; }
+        }
         private void MainForm_Load(object sender, EventArgs e)
         {
             usernameTextBox.Text = username;
-            Score s = new Score();
-            s.openConnection();
-            s.selectedUser(username);
-            scores = s.arrayInitialization();
-            level = s.the_level_of_the_user();
-            s.closeReader();
-            s.closeConnection();
-            score = s.totalScore(scores);
+            int[] user_data = new Score().userData(username);
+            for (int i = 0; i < 6; i++)
+            {
+                scores[i] = user_data[i];
+            }
+            score = user_data[6];
+            level = user_data[7];
             scoreTextBox.Text = score.ToString();
             if (level == 1)
             {
@@ -92,6 +101,78 @@ namespace e_math
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        internal void openConnection()
+        {
+            conn = new SQLiteConnection(connectionString);
+            conn.Open();
+        }
+
+        internal void closeConnection()
+        {
+            conn.Close();
+        }
+
+        internal void update_Score(int score, int chapter)
+        {
+            if (chapter == 0)
+            {
+                this.score = score;
+            }
+            else
+            {
+                this.score -= scores[chapter - 1];
+                scores[chapter - 1] = score;
+                this.score += scores[chapter - 1];
+                //Parameterized query
+                String updateSQL = "Update User Set score" + chapter + "=@score" + chapter + " where username=@username";
+                SQLiteCommand cmd = new SQLiteCommand(updateSQL, conn);
+                cmd.Parameters.AddWithValue("@score" + chapter, score);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.ExecuteNonQuery();
+            }
+            scoreTextBox.Text = this.score.ToString();
+        }
+
+        internal void update_Level()
+        {
+            Boolean changeLevel = false;
+            if (score > 90)
+            {
+                if (level == 1)
+                {
+                    changeLevel = !changeLevel;
+                }
+                if (changeLevel)
+                {
+                    level = 2;
+                    label3.Visible = false;
+                    level2Button.Visible = true;
+                }
+            }
+            else
+            {
+                if (level == 2)
+                {
+                    changeLevel = !changeLevel;
+                }
+                if (changeLevel)
+                {
+                    level = 1;
+                    label3.Visible = true;
+                    level2Button.Visible = false;
+                }
+            }
+            if (changeLevel)
+            {
+                //Parameterized query
+                String updateSQL = "Update User Set level=@level where username=@username";
+                SQLiteCommand cmd = new SQLiteCommand(updateSQL, conn);
+                cmd.Parameters.AddWithValue("@level", MainForm.instance.level);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.ExecuteNonQuery();
+            }
         }
     }
 }

@@ -23,7 +23,7 @@ namespace e_math
         private void Chapter3Form_Load(object sender, EventArgs e)
         {
             usernameTextBox.Text = username;
-            scoreTextBox.Text = MainForm.instance.scores[2].ToString();
+            scoreTextBox.Text = MainForm.instance.Scores[2].ToString();
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -42,10 +42,10 @@ namespace e_math
                 score3 += 10;
             }
             scoreTextBox.Text = score3.ToString();
-            Score s = new Score();
-            s.openConnection();
-            s.update(username, score3, 3);
-            s.closeConnection();
+            MainForm.instance.openConnection();
+            MainForm.instance.update_Score(score3, 3);
+            MainForm.instance.update_Level();
+            MainForm.instance.closeConnection();
         }
     }
 }

@@ -26,7 +26,7 @@ namespace e_math
             richTextBox2.SelectedRtf = Properties.Resources.chapter5_2;
             richTextBox3.SelectedRtf = Properties.Resources.chapter5_3;
             usernameTextBox.Text = username;
-            scoreTextBox.Text = MainForm.instance.scores[4].ToString();
+            scoreTextBox.Text = MainForm.instance.Scores[4].ToString();
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -45,11 +45,10 @@ namespace e_math
                 score5 += 10;
             }
             scoreTextBox.Text = score5.ToString();
-
-            Score s = new Score();
-            s.openConnection();
-            s.update(username, score5, 5);
-            s.closeConnection();
+            MainForm.instance.openConnection();
+            MainForm.instance.update_Score(score5, 5);
+            MainForm.instance.update_Level();
+            MainForm.instance.closeConnection();
         }
     }
 }
