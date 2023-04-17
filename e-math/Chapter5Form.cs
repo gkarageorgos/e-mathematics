@@ -45,6 +45,7 @@ namespace e_math
                 score5 += 10;
             }
             scoreTextBox.Text = score5.ToString();
+
             Score s = new Score();
             s.openConnection();
             s.update(username, score5, 5);

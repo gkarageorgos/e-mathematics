@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace e_math
 {
-    class Score
+    internal class Score
     {
         private String connectionString = "Data source=..\\..\\e-math.db;Version=3";
         private SQLiteConnection conn;
         private SQLiteDataReader reader;
         private int[] arr = new int[6];
         private Boolean changeLevel = false;
-        public void selectedUser(String username)
+        internal void selectedUser(String username)
         {
             //Parameterized query
             String selectSQL = "Select * from User where username=@username";
@@ -22,11 +22,11 @@ namespace e_math
             cmd.Parameters.AddWithValue("@username", username);
             reader = cmd.ExecuteReader();
         }
-        public void update(String username, int score, int i)
+        internal void update(String username, int chapter_score, int chapter)
         {
-            MainForm.instance.score -= MainForm.instance.scores[i - 1];
-            MainForm.instance.scores[i - 1] = score;
-            MainForm.instance.score += MainForm.instance.scores[i - 1];
+            MainForm.instance.score -= MainForm.instance.scores[chapter - 1];
+            MainForm.instance.scores[chapter - 1] = chapter_score;
+            MainForm.instance.score += MainForm.instance.scores[chapter - 1];
             if (MainForm.instance.score > 90)
             {
                 if (MainForm.instance.level == 1)
@@ -64,13 +64,14 @@ namespace e_math
             }
             MainForm.instance.scoreTextBox.Text = MainForm.instance.score.ToString();
             //Parameterized query
-            String updateSQL = "Update User Set score" + i + "=@score" + i +" where username=@username";
+            String updateSQL = "Update User Set score" + chapter + "=@score" + chapter +" where username=@username";
             SQLiteCommand cmd = new SQLiteCommand(updateSQL, conn);
-            cmd.Parameters.AddWithValue("@score" + i, score);
+            cmd.Parameters.AddWithValue("@score" + chapter, chapter_score);
             cmd.Parameters.AddWithValue("@username", username);
             cmd.ExecuteNonQuery();
         }
-        public int[] arrayInitialization()
+
+        internal int[] arrayInitialization()
         {
             if (reader.Read())
             {
@@ -81,24 +82,24 @@ namespace e_math
             }
             return arr;
         }
-        public int the_level_of_the_user()
+        internal int the_level_of_the_user()
         {
             return reader.GetInt32(9);
         }
-        public void openConnection()
+        internal void openConnection()
         {
             conn = new SQLiteConnection(connectionString);
             conn.Open();
         }
-        public void closeReader()
+        internal void closeReader()
         {
             reader.Close();
         }
-        public void closeConnection()
+        internal void closeConnection()
         {
             conn.Close();
         }
-        public int totalScore(int[] scores)
+        internal int totalScore(int[] scores)
         {
             int sum = 0;
             for (int i = 0; i < scores.Length; i++)

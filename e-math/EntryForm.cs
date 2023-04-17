@@ -96,6 +96,11 @@ namespace e_math
 ;            }
         }
 
+        private void EntryForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void passwordTextBox_Leave(object sender, EventArgs e)
         {
             if (passwordTextBox.Text == "")

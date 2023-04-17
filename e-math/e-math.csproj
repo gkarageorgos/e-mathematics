@@ -246,6 +246,7 @@
     <None Include="homework\chapter5.rtf" />
     <None Include="homework\chapter6-2.rtf" />
     <None Include="homework\chapter6-3.rtf" />
+    <None Include="homework\exercises_repetitions.rtf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

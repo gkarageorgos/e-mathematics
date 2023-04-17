@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>2. Δύο όμοια αεροπλάνα με ίδιο αριθμό θέσεων φτάνουν στο αεροδρόμιο Ελ. Βενιζέλος. Το πρώτο είναι πλήρες κατά τα 28/32 και το δεύτερο κατά τα 98/112 των θέσεων. Τα δύο αεροπλάνα μεταφέρουν τον ίδιο αριθμό επιβατών;</value>
+  </data>
+  <data name="richTextBox5.Text" xml:space="preserve">
+    <value>5. Ο Γιάννης αγόρασε 12 βάζα μέλι χωρητικότητας 3/5 του λίτρου το καθένα. Α. Πόσα λίτρα μέλι αγόρασε συνολικά ο Γιάννης; Β. Πόσα βάζα μέλι χωρητικότητας 9/25 λίτρων θα πρέπει να αγοράσει ο Γιάννης, ώστε τελικά να έχει την ίδια ποσότητα μελιού με πριν;</value>
+  </data>
 </root>

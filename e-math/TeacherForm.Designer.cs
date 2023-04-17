@@ -117,6 +117,7 @@ namespace e_math
             this.Controls.Add(this.studentListView);
             this.Name = "TeacherForm";
             this.Text = "TeacherForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TeacherForm_FormClosed);
             this.Load += new System.EventHandler(this.TeacherForm_Load);
             this.ResumeLayout(false);
 

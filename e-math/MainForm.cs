@@ -13,11 +13,11 @@ namespace e_math
 {
     public partial class MainForm : Form
     {
-        public static MainForm instance;
+        internal static MainForm instance;
         private String username;
-        public int[] scores = new int[6];
-        public int score;
-        public int level;
+        internal int[] scores = new int[6];
+        internal int score;
+        internal int level;
         private void MainForm_Load(object sender, EventArgs e)
         {
             usernameTextBox.Text = username;

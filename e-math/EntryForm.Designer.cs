@@ -157,6 +157,7 @@ namespace e_math
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EntryForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EntryForm_FormClosed);
             this.Load += new System.EventHandler(this.EntryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

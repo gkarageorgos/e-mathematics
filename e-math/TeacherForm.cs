@@ -49,5 +49,10 @@ namespace e_math
             reader.Close();
             conn.Close();
         }
+
+        private void TeacherForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
