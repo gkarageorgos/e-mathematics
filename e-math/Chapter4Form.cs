@@ -31,17 +31,17 @@ namespace e_math
             int score4 = 0;
             if (answer1TextBox.Text == "3/2")
             {
-                score4 += 3;
+                score4 += 4;
             }
             if (answer2TextBox.Text == "19/15")
             {
-                score4 += 5;
+                score4 += 6;
             }
             if (answer3TextBox.Text == "16/15")
             {
                 score4 += 10;
             }
-            scoreTextBox.Text = score4.ToString();
+            scoreTextBox.Text = score4.ToString() + " /20";
             MainForm.instance.openConnection();
             MainForm.instance.update_Score(score4, 4);
             MainForm.instance.update_Level();

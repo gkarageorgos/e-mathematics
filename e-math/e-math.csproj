@@ -143,6 +143,12 @@
     <Compile Include="EntryForm.Designer.cs">
       <DependentUpon>EntryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="IntroductionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,12 @@
     </Compile>
     <Compile Include="TeacherForm.Designer.cs">
       <DependentUpon>TeacherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Theory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theory.Designer.cs">
+      <DependentUpon>Theory.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Chapter1Form.resx">
       <DependentUpon>Chapter1Form.cs</DependentUpon>
@@ -215,6 +227,9 @@
     <EmbeddedResource Include="EntryForm.resx">
       <DependentUpon>EntryForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IntroductionForm.resx">
       <DependentUpon>IntroductionForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherForm.resx">
       <DependentUpon>TeacherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theory.resx">
+      <DependentUpon>Theory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="homework\chapter5-1.rtf" />
     <None Include="homework\chapter5-3.rtf" />

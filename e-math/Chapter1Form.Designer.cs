@@ -53,7 +53,7 @@ namespace e_math
             this.richTextBox1.Size = new System.Drawing.Size(372, 102);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "1. Το σχήμα έχει χωριστεί σε ίσα μέρη. Ποιο κλάσμα εκφράζει το χρωματισμένο μέρος" +
-    ";";
+    "; (4 μονάδες)";
             // 
             // richTextBox2
             // 
@@ -62,9 +62,9 @@ namespace e_math
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(498, 151);
             this.richTextBox2.TabIndex = 1;
-            this.richTextBox2.Text = "2. Από τους 11 ποδοσφαιριστές μιας ελληνικής ομάδας οι 4 είναι αλλοδαποί\nκαι οι υ" +
+            this.richTextBox2.Text = "2. Από τους 11 ποδοσφαιριστές μιας ελληνικής ομάδας οι 4 είναι αλλοδαποί και οι υ" +
     "πόλοιποι Έλληνες. Να υπολογίσετε το μέρος της ομάδας που αποτελείται από Έλληνες" +
-    "\nποδοσφαιριστές.";
+    " ποδοσφαιριστές. (6 μονάδες)";
             // 
             // richTextBox3
             // 
@@ -75,7 +75,7 @@ namespace e_math
             this.richTextBox3.TabIndex = 2;
             this.richTextBox3.Text = "3. Οι μαθήτριες ενός γυμνασίου είναι τα 5/9 του συνόλου των παιδιών. Αν ο αριθμός" +
     " των μαθητριών είναι 85 , να υπολογίσετε τον αριθμό όλων των παιδιών του γυμνασί" +
-    "ου.";
+    "ου. (10 μονάδες)";
             // 
             // pictureBox1
             // 

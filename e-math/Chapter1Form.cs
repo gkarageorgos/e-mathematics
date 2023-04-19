@@ -23,7 +23,7 @@ namespace e_math
         {
             pictureBox1.ImageLocation = "..//..//pictures/kyklos.png";
             usernameTextBox.Text = username;
-            scoreTextBox.Text = MainForm.instance.Scores[0].ToString();
+            scoreTextBox.Text = MainForm.instance.Scores[0].ToString() + " /20";
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -31,17 +31,17 @@ namespace e_math
             int score1 = 0;
             if (answer1TextBox.Text == "2/4")
             {
-                score1 += 3;
+                score1 += 4;
             }
             if (correctRadioButton.Checked)
             {
-                score1 += 5;
+                score1 += 6;
             }
             if (answer3TextBox.Text == "153")
             {
                 score1 += 10;
             }
-            scoreTextBox.Text = score1.ToString();
+            scoreTextBox.Text = score1.ToString() + " /20";
             MainForm.instance.openConnection();
             MainForm.instance.update_Score(score1, 1);
             MainForm.instance.update_Level();

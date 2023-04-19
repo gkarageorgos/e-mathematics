@@ -16,6 +16,7 @@ namespace e_math
         private String connectionString = "Data source=..\\..\\e-math.db;Version=3";
         private SQLiteConnection conn;
         private String username, password;
+        private int count = 0;
         public RegisterForm()
         {
             InitializeComponent();
@@ -31,6 +32,14 @@ namespace e_math
         {
             conn = new SQLiteConnection(connectionString);
             pictureBox1.ImageLocation = "..//..//pictures/mathimatika.jpg";
+        }
+
+        private void RegisterForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (count == 0)
+            {
+                new EntryForm().Show();
+            }
         }
 
         private void registerButton_Click(object sender, EventArgs e)
@@ -58,11 +67,12 @@ namespace e_math
                 cmd.Parameters.AddWithValue("@score5", 0);
                 cmd.Parameters.AddWithValue("@score6", 0);
                 cmd.Parameters.AddWithValue("@level", 1);
-                int count = cmd.ExecuteNonQuery();
+                count = cmd.ExecuteNonQuery();
                 if (count > 0)
                     MessageBox.Show("Συγχαρητήρια!!! Η εγγραφή έγινε με επιτυχία!");
                 conn.Close();
-                this.Hide();
+                new LoginForm().Show();
+                this.Close();
             }
 
         }

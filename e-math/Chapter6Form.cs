@@ -32,17 +32,17 @@ namespace e_math
             int score6 = 0;
             if (answer1TextBox.Text == "20/3")
             {
-                score6 += 3;
+                score6 += 4;
             }
             if (answer2TextBox.Text == "28/3")
             {
-                score6 += 5;
+                score6 += 6;
             }
             if (answer3TextBox.Text == "192/945" || answer3TextBox.Text == "64/315")
             {
                 score6 += 10;
             }
-            scoreTextBox.Text = score6.ToString();
+            scoreTextBox.Text = score6.ToString() + " /20";
             MainForm.instance.openConnection();
             MainForm.instance.update_Score(score6, 6);
             MainForm.instance.update_Level();

@@ -31,14 +31,7 @@ namespace e_math
         private void MainForm_Load(object sender, EventArgs e)
         {
             usernameTextBox.Text = username;
-            int[] user_data = new Score().userData(username);
-            for (int i = 0; i < 6; i++)
-            {
-                scores[i] = user_data[i];
-            }
-            score = user_data[6];
-            level = user_data[7];
-            scoreTextBox.Text = score.ToString();
+            scoreTextBox.Text = score.ToString() + " /120";
             if (level == 1)
             {
                 label3.Visible = true;
@@ -51,16 +44,14 @@ namespace e_math
             }
         }
 
-        public MainForm(String username)
+        public MainForm(String username, int[] scores, int score, int level)
         {
             InitializeComponent();
             this.username = username;
+            this.scores = scores;
+            this.score = score;
+            this.level = level;
             instance = this;
-        }
-
-        private void theoryButton_Click(object sender, EventArgs e)
-        {
-            Help.ShowHelp(this, "..//..//help//theory.chm");
         }
 
         private void chapter1Button_Click(object sender, EventArgs e)
@@ -132,13 +123,13 @@ namespace e_math
                 cmd.Parameters.AddWithValue("@username", username);
                 cmd.ExecuteNonQuery();
             }
-            scoreTextBox.Text = this.score.ToString();
+            scoreTextBox.Text = this.score.ToString() + " /120";
         }
 
         internal void update_Level()
         {
             Boolean changeLevel = false;
-            if (score > 90)
+            if (score > 100)
             {
                 if (level == 1)
                 {

@@ -31,17 +31,17 @@ namespace e_math
             int score3 = 0;
             if (answer1TextBox.Text == "5/7")
             {
-                score3 += 3;
+                score3 += 4;
             }
             if (correctRadioButton.Checked)
             {
-                score3 += 5;
+                score3 += 6;
             }
             if (answer3TextBox.Text == "5")
             {
                 score3 += 10;
             }
-            scoreTextBox.Text = score3.ToString();
+            scoreTextBox.Text = score3.ToString() + " /20";
             MainForm.instance.openConnection();
             MainForm.instance.update_Score(score3, 3);
             MainForm.instance.update_Level();

@@ -42,7 +42,6 @@ namespace e_math
             this.scoreTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.theoryButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.level2Button = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -187,29 +186,17 @@ namespace e_math
             this.label2.TabIndex = 4;
             this.label2.Text = "score:";
             // 
-            // theoryButton
-            // 
-            this.theoryButton.BackColor = System.Drawing.Color.White;
-            this.theoryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.theoryButton.ForeColor = System.Drawing.Color.Purple;
-            this.theoryButton.Location = new System.Drawing.Point(12, 45);
-            this.theoryButton.Name = "theoryButton";
-            this.theoryButton.Size = new System.Drawing.Size(396, 67);
-            this.theoryButton.TabIndex = 6;
-            this.theoryButton.Text = "Θυμόμαστε-Μαθαίνουμε";
-            this.theoryButton.UseVisualStyleBackColor = false;
-            this.theoryButton.Click += new System.EventHandler(this.theoryButton_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label3.Location = new System.Drawing.Point(15, 571);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label3.Location = new System.Drawing.Point(15, 56);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(685, 64);
+            this.label3.Size = new System.Drawing.Size(655, 50);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Μπορείς να συνεχίσεις στο επόμενο επίπεδο όταν\r\nέχεις score μεγαλύτερο από 90.";
+            this.label3.Text = "Παρακάτω θα βρείτε ποικίλες ασκήσεις για προσωπική εξάσκηση .\r\nΣυλλεγοντας 100 μο" +
+    "νάδες, είστε έτοιμη για το τελικό τεστ.";
             // 
             // level2Button
             // 
@@ -220,7 +207,7 @@ namespace e_math
             this.level2Button.Name = "level2Button";
             this.level2Button.Size = new System.Drawing.Size(207, 90);
             this.level2Button.TabIndex = 8;
-            this.level2Button.Text = "Επίπεδο 2";
+            this.level2Button.Text = "Τελικό Τεστ";
             this.level2Button.UseVisualStyleBackColor = false;
             this.level2Button.Click += new System.EventHandler(this.level2Button_Click);
             // 
@@ -231,7 +218,6 @@ namespace e_math
             this.ClientSize = new System.Drawing.Size(747, 667);
             this.Controls.Add(this.level2Button);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.theoryButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.scoreTextBox);
             this.Controls.Add(this.usernameTextBox);
@@ -261,7 +247,6 @@ namespace e_math
         private System.Windows.Forms.Button chapter4Button;
         private System.Windows.Forms.Button chapter6Button;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Button theoryButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button level2Button;
     }
