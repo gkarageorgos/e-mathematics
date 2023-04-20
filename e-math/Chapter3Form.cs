@@ -41,10 +41,13 @@ namespace e_math
             if (correctRadioButton.Checked)
             {
                 score3 += 6;
+                correctRadioButton.BackColor = Color.FromArgb(143, 188, 143);
+                falseRadioButton.BackColor = Chapter3Form.DefaultBackColor;
             }
-            else
+            else if (falseRadioButton.Checked)
             {
-
+                falseRadioButton.BackColor = Color.FromArgb(250, 128, 114);
+                correctRadioButton.BackColor = Chapter3Form.DefaultBackColor;
             }
             if (answer3TextBox.Text == "5")
             {

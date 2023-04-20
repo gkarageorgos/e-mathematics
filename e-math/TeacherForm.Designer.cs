@@ -38,7 +38,6 @@ namespace e_math
             this.score5ColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.score6ColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.scoreColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.levelColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // studentListView
@@ -51,15 +50,14 @@ namespace e_math
             this.score4ColumnHeader,
             this.score5ColumnHeader,
             this.score6ColumnHeader,
-            this.scoreColumnHeader,
-            this.levelColumnHeader});
+            this.scoreColumnHeader});
             this.studentListView.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.studentListView.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.studentListView.GridLines = true;
             this.studentListView.HideSelection = false;
             this.studentListView.Location = new System.Drawing.Point(12, 12);
             this.studentListView.Name = "studentListView";
-            this.studentListView.Size = new System.Drawing.Size(1407, 639);
+            this.studentListView.Size = new System.Drawing.Size(1249, 639);
             this.studentListView.TabIndex = 0;
             this.studentListView.UseCompatibleStateImageBehavior = false;
             this.studentListView.View = System.Windows.Forms.View.Details;
@@ -104,16 +102,11 @@ namespace e_math
             this.scoreColumnHeader.Text = "Συνολική βαθμολογία";
             this.scoreColumnHeader.Width = 267;
             // 
-            // levelColumnHeader
-            // 
-            this.levelColumnHeader.Text = "Επίπεδο";
-            this.levelColumnHeader.Width = 125;
-            // 
             // TeacherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1433, 663);
+            this.ClientSize = new System.Drawing.Size(1267, 663);
             this.Controls.Add(this.studentListView);
             this.Name = "TeacherForm";
             this.Text = "TeacherForm";
@@ -134,6 +127,5 @@ namespace e_math
         private System.Windows.Forms.ColumnHeader score5ColumnHeader;
         private System.Windows.Forms.ColumnHeader score6ColumnHeader;
         private System.Windows.Forms.ColumnHeader scoreColumnHeader;
-        private System.Windows.Forms.ColumnHeader levelColumnHeader;
     }
 }

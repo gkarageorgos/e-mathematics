@@ -122,7 +122,7 @@ namespace e_math
         internal void update_Level()
         {
             Boolean changeLevel = false;
-            if (score > 100)
+            if (score >= 100)
             {
                 if (level == 1)
                 {

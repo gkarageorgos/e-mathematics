@@ -33,7 +33,7 @@ namespace e_math
                 String username = reader.GetString(0);
                 ListViewItem item = new ListViewItem(username);
                 int[] userData = new Score().userData(username);
-                for (int i = 0; i < 8; i++)
+                for (int i = 0; i < 7; i++)
                 {
                     item.SubItems.Add(userData[i].ToString());
                 }
