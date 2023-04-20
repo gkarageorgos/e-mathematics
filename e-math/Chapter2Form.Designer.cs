@@ -101,14 +101,15 @@ namespace e_math
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.richTextBox1.Location = new System.Drawing.Point(17, 78);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(451, 84);
+            this.richTextBox1.Size = new System.Drawing.Size(446, 112);
             this.richTextBox1.TabIndex = 17;
-            this.richTextBox1.Text = "1. Να μετατρέψετε το κλάσμα 6/15 σε ένα ισοδύναμο με παρονομαστή τον αριθμό 45.";
+            this.richTextBox1.Text = "1. Να μετατρέψετε το κλάσμα 6/15 σε ένα ισοδύναμο με παρονομαστή τον αριθμό 45. (" +
+    "4 μονάδες)\n";
             // 
             // answer1TextBox
             // 
             this.answer1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.answer1TextBox.ForeColor = System.Drawing.Color.Blue;
+            this.answer1TextBox.ForeColor = System.Drawing.Color.Black;
             this.answer1TextBox.Location = new System.Drawing.Point(618, 132);
             this.answer1TextBox.Name = "answer1TextBox";
             this.answer1TextBox.Size = new System.Drawing.Size(93, 30);
@@ -117,16 +118,16 @@ namespace e_math
             // richTextBox2
             // 
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.richTextBox2.Location = new System.Drawing.Point(17, 228);
+            this.richTextBox2.Location = new System.Drawing.Point(17, 244);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(451, 78);
+            this.richTextBox2.Size = new System.Drawing.Size(451, 80);
             this.richTextBox2.TabIndex = 19;
-            this.richTextBox2.Text = "2. Είναι ισοδύναμα τα κλάσματα 7/8 και 30/40;";
+            this.richTextBox2.Text = "2. Είναι ισοδύναμα τα κλάσματα 7/8 και 30/40; (6 μονάδες)\n";
             // 
             // answer3TextBox
             // 
             this.answer3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.answer3TextBox.ForeColor = System.Drawing.Color.Blue;
+            this.answer3TextBox.ForeColor = System.Drawing.Color.Black;
             this.answer3TextBox.Location = new System.Drawing.Point(618, 435);
             this.answer3TextBox.Name = "answer3TextBox";
             this.answer3TextBox.Size = new System.Drawing.Size(93, 30);
@@ -139,12 +140,12 @@ namespace e_math
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(451, 84);
             this.richTextBox3.TabIndex = 21;
-            this.richTextBox3.Text = "3. Να απλοποιήσετε σε ισοδύναμο ανάγωγο το κλάσμα 225/315.";
+            this.richTextBox3.Text = "3. Να απλοποιήσετε σε ισοδύναμο ανάγωγο το κλάσμα 225/315. (10 μονάδες)\n";
             // 
             // correctRadioButton
             // 
             this.correctRadioButton.AutoSize = true;
-            this.correctRadioButton.Location = new System.Drawing.Point(659, 285);
+            this.correctRadioButton.Location = new System.Drawing.Point(659, 303);
             this.correctRadioButton.Name = "correctRadioButton";
             this.correctRadioButton.Size = new System.Drawing.Size(52, 21);
             this.correctRadioButton.TabIndex = 23;
@@ -155,7 +156,7 @@ namespace e_math
             // falseRadioButton
             // 
             this.falseRadioButton.AutoSize = true;
-            this.falseRadioButton.Location = new System.Drawing.Point(573, 285);
+            this.falseRadioButton.Location = new System.Drawing.Point(573, 303);
             this.falseRadioButton.Name = "falseRadioButton";
             this.falseRadioButton.Size = new System.Drawing.Size(50, 21);
             this.falseRadioButton.TabIndex = 22;
@@ -182,7 +183,7 @@ namespace e_math
             this.Controls.Add(this.label1);
             this.Name = "Chapter2Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chapter2Form";
+            this.Text = "Ισοδύναμα κλάσματα";
             this.Load += new System.EventHandler(this.Chapter2Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

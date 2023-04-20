@@ -50,6 +50,7 @@ namespace e_math
             // exercisesΒutton
             // 
             this.exercisesΒutton.BackColor = System.Drawing.Color.White;
+            this.exercisesΒutton.Enabled = false;
             this.exercisesΒutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.exercisesΒutton.ForeColor = System.Drawing.Color.Purple;
             this.exercisesΒutton.Location = new System.Drawing.Point(250, 196);
@@ -58,7 +59,6 @@ namespace e_math
             this.exercisesΒutton.TabIndex = 8;
             this.exercisesΒutton.Text = "Ασκήσεις";
             this.exercisesΒutton.UseVisualStyleBackColor = false;
-            this.exercisesΒutton.Visible = false;
             this.exercisesΒutton.Click += new System.EventHandler(this.exercisesΒutton_Click);
             // 
             // richTextBox1

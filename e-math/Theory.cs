@@ -25,7 +25,7 @@ namespace e_math
         private void theoryButton_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "..//..//help//theory.chm");
-            exercisesΒutton.Visible = true;
+            exercisesΒutton.Enabled = true;
         }
 
         private void exercisesΒutton_Click(object sender, EventArgs e)
@@ -50,7 +50,7 @@ namespace e_math
             level = user_data[7];
             if (score > 0)
             {
-                exercisesΒutton.Visible = true;
+                exercisesΒutton.Enabled = true;
             }
         }
     }

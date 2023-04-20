@@ -116,17 +116,17 @@ namespace e_math
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.richTextBox1.Location = new System.Drawing.Point(17, 92);
+            this.richTextBox1.Location = new System.Drawing.Point(17, 79);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(451, 65);
+            this.richTextBox1.Size = new System.Drawing.Size(446, 81);
             this.richTextBox1.TabIndex = 36;
-            this.richTextBox1.Text = "1. Να υπολογίσετε το πηλίκο 5/3 : 1/4";
+            this.richTextBox1.Text = "1. Να υπολογίσετε το πηλίκο 5/3 : 1/4 (4 μονάδες)\n";
             // 
             // answer1TextBox
             // 
             this.answer1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.answer1TextBox.ForeColor = System.Drawing.Color.Blue;
-            this.answer1TextBox.Location = new System.Drawing.Point(618, 127);
+            this.answer1TextBox.ForeColor = System.Drawing.Color.Black;
+            this.answer1TextBox.Location = new System.Drawing.Point(618, 130);
             this.answer1TextBox.Name = "answer1TextBox";
             this.answer1TextBox.Size = new System.Drawing.Size(93, 30);
             this.answer1TextBox.TabIndex = 39;
@@ -134,7 +134,7 @@ namespace e_math
             // answer2TextBox
             // 
             this.answer2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.answer2TextBox.ForeColor = System.Drawing.Color.Blue;
+            this.answer2TextBox.ForeColor = System.Drawing.Color.Black;
             this.answer2TextBox.Location = new System.Drawing.Point(618, 299);
             this.answer2TextBox.Name = "answer2TextBox";
             this.answer2TextBox.Size = new System.Drawing.Size(93, 30);
@@ -143,7 +143,7 @@ namespace e_math
             // answer3TextBox
             // 
             this.answer3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.answer3TextBox.ForeColor = System.Drawing.Color.Blue;
+            this.answer3TextBox.ForeColor = System.Drawing.Color.Black;
             this.answer3TextBox.Location = new System.Drawing.Point(618, 503);
             this.answer3TextBox.Name = "answer3TextBox";
             this.answer3TextBox.Size = new System.Drawing.Size(93, 30);
@@ -165,9 +165,10 @@ namespace e_math
             this.Controls.Add(this.scoreTextBox);
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Chapter6Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chapter6Form";
+            this.Text = "Διαίρεση κλασμάτων";
             this.Load += new System.EventHandler(this.Chapter6Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -32,16 +32,36 @@ namespace e_math
             if (answer1TextBox.Text == "2/4")
             {
                 score1 += 4;
+                answer1TextBox.BackColor = Color.FromArgb(143, 188, 143);
+            }
+            else
+            {
+                answer1TextBox.BackColor = Color.FromArgb(250, 128, 114);
             }
             if (correctRadioButton.Checked)
             {
                 score1 += 6;
+                correctRadioButton.BackColor = Color.FromArgb(143, 188, 143);
+                falseRadioButton.BackColor = Chapter1Form.DefaultBackColor;
+
+            }
+            else if(falseRadioButton.Checked)
+            {
+                falseRadioButton.BackColor = Color.FromArgb(250, 128, 114);
+                correctRadioButton.BackColor = Chapter1Form.DefaultBackColor;
             }
             if (answer3TextBox.Text == "153")
             {
                 score1 += 10;
+                answer3TextBox.BackColor = Color.FromArgb(143, 188, 143);
             }
+            else
+            {
+                answer3TextBox.BackColor = Color.FromArgb(250, 128, 114);
+            }
+
             scoreTextBox.Text = score1.ToString() + " /20";
+
             MainForm.instance.openConnection();
             MainForm.instance.update_Score(score1, 1);
             MainForm.instance.update_Level();

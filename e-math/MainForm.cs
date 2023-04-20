@@ -35,12 +35,12 @@ namespace e_math
             if (level == 1)
             {
                 label3.Visible = true;
-                level2Button.Visible = false;
+                level2Button.Enabled = false;
             }
             else
             {
                 label3.Visible = false;
-                level2Button.Visible = true;
+                level2Button.Enabled = true;
             }
         }
 
@@ -86,7 +86,7 @@ namespace e_math
 
         private void level2Button_Click(object sender, EventArgs e)
         {
-            new newTaskForm(username).Show();
+            new newTaskForm().Show();
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -107,22 +107,15 @@ namespace e_math
 
         internal void update_Score(int score, int chapter)
         {
-            if (chapter == 0)
-            {
-                this.score = score;
-            }
-            else
-            {
-                this.score -= scores[chapter - 1];
-                scores[chapter - 1] = score;
-                this.score += scores[chapter - 1];
-                //Parameterized query
-                String updateSQL = "Update User Set score" + chapter + "=@score" + chapter + " where username=@username";
-                SQLiteCommand cmd = new SQLiteCommand(updateSQL, conn);
-                cmd.Parameters.AddWithValue("@score" + chapter, score);
-                cmd.Parameters.AddWithValue("@username", username);
-                cmd.ExecuteNonQuery();
-            }
+            this.score -= scores[chapter - 1];
+            scores[chapter - 1] = score;
+            this.score += scores[chapter - 1];
+            //Parameterized query
+            String updateSQL = "Update User Set score" + chapter + "=@score" + chapter + " where username=@username";
+            SQLiteCommand cmd = new SQLiteCommand(updateSQL, conn);
+            cmd.Parameters.AddWithValue("@score" + chapter, score);
+            cmd.Parameters.AddWithValue("@username", username);
+            cmd.ExecuteNonQuery();
             scoreTextBox.Text = this.score.ToString() + " /120";
         }
 
@@ -139,7 +132,7 @@ namespace e_math
                 {
                     level = 2;
                     label3.Visible = false;
-                    level2Button.Visible = true;
+                    level2Button.Enabled = true;
                 }
             }
             else
@@ -152,7 +145,7 @@ namespace e_math
                 {
                     level = 1;
                     label3.Visible = true;
-                    level2Button.Visible = false;
+                    level2Button.Enabled = false;
                 }
             }
             if (changeLevel)

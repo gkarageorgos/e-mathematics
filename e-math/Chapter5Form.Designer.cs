@@ -130,7 +130,7 @@ namespace e_math
             // answer3TextBox
             // 
             this.answer3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.answer3TextBox.ForeColor = System.Drawing.Color.Blue;
+            this.answer3TextBox.ForeColor = System.Drawing.Color.Black;
             this.answer3TextBox.Location = new System.Drawing.Point(618, 504);
             this.answer3TextBox.Name = "answer3TextBox";
             this.answer3TextBox.Size = new System.Drawing.Size(93, 30);
@@ -148,7 +148,7 @@ namespace e_math
             // answer1TextBox
             // 
             this.answer1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.answer1TextBox.ForeColor = System.Drawing.Color.Blue;
+            this.answer1TextBox.ForeColor = System.Drawing.Color.Black;
             this.answer1TextBox.Location = new System.Drawing.Point(618, 160);
             this.answer1TextBox.Name = "answer1TextBox";
             this.answer1TextBox.Size = new System.Drawing.Size(93, 30);
@@ -182,7 +182,7 @@ namespace e_math
             this.Controls.Add(this.label1);
             this.Name = "Chapter5Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chapter5Form";
+            this.Text = "Πολ/σμος κλασμάτων";
             this.Load += new System.EventHandler(this.Chapter5Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -12,52 +12,44 @@ namespace e_math
 {
     public partial class newTaskForm : Form
     {
-        private String username;
-        public newTaskForm(String username)
+        private int score = 0;
+        public newTaskForm()
         {
             InitializeComponent();
-            this.username = username;
         }
 
         private void answerButton_Click(object sender, EventArgs e)
         {
-            int score = new Score().userData(username)[6];
             if (answer1TextBox.Text == "64")
             {
-                score += 8;
+                score += 4;
             }
             if (correctRadioButton.Checked)
             {
-                score += 8;
+                score += 4;
             }
             if (answer3TextBox.Text == "1")
             {
-                score += 8;
+                score += 4;
             }
             if (answer4ATextBox.Text == "45/112")
             {
-                score += 6;
+                score += 2;
             }
             if (answer4BTextBox.Text == "445/18")
             {
-                score += 6;
+                score += 2;
             }
             if (answer5ATextBox.Text == "36/5")
             {
-                score += 6;
+                score += 2;
             }
             if (answer5ATextBox.Text == "20")
             {
-                score += 6;
+                score += 2;
             }
-            MainForm.instance.openConnection();
-            MainForm.instance.update_Score(score, 0);
-            MainForm.instance.update_Level();
-            MainForm.instance.closeConnection();
-            if (MainForm.instance.Level == 1)
-            {
-                this.Close();
-            }
+            MessageBox.Show("Ο τελικός βαθμός σου στο τεστ είναι: " + score.ToString());
+            this.Close();
         }
 
         private void newTaskForm_Load(object sender, EventArgs e)

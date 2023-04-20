@@ -196,7 +196,7 @@ namespace e_math
             this.label3.Size = new System.Drawing.Size(655, 50);
             this.label3.TabIndex = 7;
             this.label3.Text = "Παρακάτω θα βρείτε ποικίλες ασκήσεις για προσωπική εξάσκηση .\r\nΣυλλεγοντας 100 μο" +
-    "νάδες, είστε έτοιμη για το τελικό τεστ.";
+    "νάδες, είστε έτοιμοι για το τελικό τεστ.";
             // 
             // level2Button
             // 

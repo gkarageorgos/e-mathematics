@@ -68,7 +68,7 @@ namespace e_math
             this.richTextBox1.Size = new System.Drawing.Size(541, 88);
             this.richTextBox1.TabIndex = 17;
             this.richTextBox1.Text = "1. Αν τα 8/9 της μάζας του ανθρώπινου σώματος αποτελείται από νερό, να βρείτε τη " +
-    "μάζα του νερού στο σώμα ενός ανθρώπου μάζας 72 κιλών.";
+    "μάζα του νερού στο σώμα ενός ανθρώπου μάζας 72 κιλών. (4 μονάδες)";
             // 
             // richTextBox2
             // 
@@ -88,7 +88,7 @@ namespace e_math
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(541, 68);
             this.richTextBox3.TabIndex = 19;
-            this.richTextBox3.Text = "3. Να βρείτε το φυσικό αριθμό μεταξύ των κλασμάτων 12/13 και 14/13";
+            this.richTextBox3.Text = "3. Να βρείτε το φυσικό αριθμό μεταξύ των κλασμάτων 12/13 και 14/13. (4 μονάδες)";
             // 
             // richTextBox4
             // 

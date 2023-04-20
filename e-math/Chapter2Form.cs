@@ -23,7 +23,7 @@ namespace e_math
         private void Chapter2Form_Load(object sender, EventArgs e)
         {
             usernameTextBox.Text = username;
-            scoreTextBox.Text = MainForm.instance.Scores[1].ToString();
+            scoreTextBox.Text = MainForm.instance.Scores[1].ToString() + " /20";
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -32,6 +32,11 @@ namespace e_math
             if (answer1TextBox.Text == "18/45")
             {
                 score2 += 4;
+                answer1TextBox.BackColor = Color.FromArgb(143, 180, 143);
+            }
+            else
+            {
+                answer1TextBox.BackColor = Color.FromArgb(250, 128, 114);
             }
             if (correctRadioButton.Checked)
             {
@@ -39,7 +44,12 @@ namespace e_math
             }
             if (answer3TextBox.Text == "5/7")
             {
-                score2 += 10;                
+                score2 += 10;
+                answer3TextBox.BackColor = Color.FromArgb(143, 180, 143);
+            }
+            else
+            {
+                answer3TextBox.BackColor = Color.FromArgb(250, 128, 114);
             }
             scoreTextBox.Text = score2.ToString() + " /20";
             MainForm.instance.openConnection();

@@ -26,7 +26,7 @@ namespace e_math
             richTextBox2.SelectedRtf = Properties.Resources.chapter5_2;
             richTextBox3.SelectedRtf = Properties.Resources.chapter5_3;
             usernameTextBox.Text = username;
-            scoreTextBox.Text = MainForm.instance.Scores[4].ToString();
+            scoreTextBox.Text = MainForm.instance.Scores[4].ToString() + " /20";
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -35,16 +35,30 @@ namespace e_math
             if (answer1TextBox.Text == "9/4")
             {
                 score5 += 4;
+                answer1TextBox.BackColor = Color.FromArgb(143, 180, 143);
+            }
+            else
+            {
+                answer1TextBox.BackColor = Color.FromArgb(250, 128, 114);
             }
             if (correctRadioButton.Checked)
             {
                 score5 += 6;
             }
+            else
+            {
+
+            }
             if (answer3TextBox.Text == "12/29")
             {
                 score5 += 10;
+                answer3TextBox.BackColor = Color.FromArgb(143, 180, 143);
             }
-            scoreTextBox.Text = score5.ToString() + "/20";
+            else
+            {
+                answer3TextBox.BackColor = Color.FromArgb(250, 128, 114);
+            }
+            scoreTextBox.Text = score5.ToString() + " /20";
             MainForm.instance.openConnection();
             MainForm.instance.update_Score(score5, 5);
             MainForm.instance.update_Level();

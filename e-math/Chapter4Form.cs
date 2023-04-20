@@ -23,7 +23,7 @@ namespace e_math
         private void Chapter4Form_Load(object sender, EventArgs e)
         {
             usernameTextBox.Text = username;
-            scoreTextBox.Text = MainForm.instance.Scores[3].ToString();
+            scoreTextBox.Text = MainForm.instance.Scores[3].ToString() + " /20";
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -32,16 +32,33 @@ namespace e_math
             if (answer1TextBox.Text == "3/2")
             {
                 score4 += 4;
+                answer1TextBox.BackColor = Color.FromArgb(143, 180, 143);
+            }
+            else
+            {
+                answer1TextBox.BackColor = Color.FromArgb(250, 128, 114);
             }
             if (answer2TextBox.Text == "19/15")
             {
                 score4 += 6;
+                answer2TextBox.BackColor = Color.FromArgb(143, 180, 143);
+            }
+            else
+            {
+                answer2TextBox.BackColor = Color.FromArgb(250, 128, 114);
             }
             if (answer3TextBox.Text == "16/15")
             {
                 score4 += 10;
+                answer3TextBox.BackColor = Color.FromArgb(143, 180, 143);
             }
+            else
+            {
+                answer3TextBox.BackColor = Color.FromArgb(250, 128, 114);
+            }
+
             scoreTextBox.Text = score4.ToString() + " /20";
+
             MainForm.instance.openConnection();
             MainForm.instance.update_Score(score4, 4);
             MainForm.instance.update_Level();

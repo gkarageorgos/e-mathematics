@@ -99,7 +99,7 @@ namespace e_math
             // correctRadioButton
             // 
             this.correctRadioButton.AutoSize = true;
-            this.correctRadioButton.Location = new System.Drawing.Point(641, 313);
+            this.correctRadioButton.Location = new System.Drawing.Point(641, 318);
             this.correctRadioButton.Name = "correctRadioButton";
             this.correctRadioButton.Size = new System.Drawing.Size(70, 21);
             this.correctRadioButton.TabIndex = 30;
@@ -110,7 +110,7 @@ namespace e_math
             // falseRadioButton
             // 
             this.falseRadioButton.AutoSize = true;
-            this.falseRadioButton.Location = new System.Drawing.Point(539, 313);
+            this.falseRadioButton.Location = new System.Drawing.Point(539, 318);
             this.falseRadioButton.Name = "falseRadioButton";
             this.falseRadioButton.Size = new System.Drawing.Size(70, 21);
             this.falseRadioButton.TabIndex = 29;
@@ -125,12 +125,12 @@ namespace e_math
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(451, 84);
             this.richTextBox3.TabIndex = 28;
-            this.richTextBox3.Text = "3. Να βρείτε το φυσικό αριθμό μεταξύ των κλασμάτων: 21/5 και 29/5.";
+            this.richTextBox3.Text = "3. Να βρείτε το φυσικό αριθμό μεταξύ των κλασμάτων: 21/5 και 29/5. (10 μονάδες)\n";
             // 
             // answer3TextBox
             // 
             this.answer3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.answer3TextBox.ForeColor = System.Drawing.Color.Blue;
+            this.answer3TextBox.ForeColor = System.Drawing.Color.Black;
             this.answer3TextBox.Location = new System.Drawing.Point(618, 463);
             this.answer3TextBox.Name = "answer3TextBox";
             this.answer3TextBox.Size = new System.Drawing.Size(93, 30);
@@ -141,14 +141,14 @@ namespace e_math
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.richTextBox2.Location = new System.Drawing.Point(17, 256);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(451, 78);
+            this.richTextBox2.Size = new System.Drawing.Size(451, 83);
             this.richTextBox2.TabIndex = 26;
-            this.richTextBox2.Text = "2. Το κλάσμα 8/12 είναι μεγαλύτερο από το 4/5.";
+            this.richTextBox2.Text = "2. Το κλάσμα 8/12 είναι μεγαλύτερο από το 4/5. (6 μονάδες)\n";
             // 
             // answer1TextBox
             // 
             this.answer1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.answer1TextBox.ForeColor = System.Drawing.Color.Blue;
+            this.answer1TextBox.ForeColor = System.Drawing.Color.Black;
             this.answer1TextBox.Location = new System.Drawing.Point(618, 160);
             this.answer1TextBox.Name = "answer1TextBox";
             this.answer1TextBox.Size = new System.Drawing.Size(93, 30);
@@ -161,7 +161,7 @@ namespace e_math
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(451, 84);
             this.richTextBox1.TabIndex = 24;
-            this.richTextBox1.Text = "1. Ποιο από τα ακόλουθα κλάσματα είναι το μεγαλύτερο 3/7 ή 5/7;";
+            this.richTextBox1.Text = "1. Ποιο από τα ακόλουθα κλάσματα είναι το μεγαλύτερο 3/7 ή 5/7; (4 μονάδες)\n";
             // 
             // Chapter3Form
             // 
@@ -182,7 +182,7 @@ namespace e_math
             this.Controls.Add(this.label1);
             this.Name = "Chapter3Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Chapter3Form";
+            this.Text = "Σύγκριση κλασμάτων";
             this.Load += new System.EventHandler(this.Chapter3Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

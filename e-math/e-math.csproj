@@ -259,6 +259,7 @@
       <DependentUpon>Theory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="homework\chapter5-1.rtf" />
+    <None Include="homework\chapter5-2.rtf" />
     <None Include="homework\chapter5-3.rtf" />
     <None Include="homework\chapter5.docx" />
     <None Include="homework\chapter5.rtf" />
