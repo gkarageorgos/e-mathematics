@@ -23,7 +23,7 @@ namespace e_math
         private void Chapter4Form_Load(object sender, EventArgs e)
         {
             usernameTextBox.Text = username;
-            scoreTextBox.Text = MainForm.instance.Scores[3].ToString() + " /20";
+            scoreTextBox.Text = ExercisesForm.instance.Scores[3].ToString() + " /20";
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -59,10 +59,10 @@ namespace e_math
 
             scoreTextBox.Text = score4.ToString() + " /20";
 
-            MainForm.instance.openConnection();
-            MainForm.instance.update_Score(score4, 4);
-            MainForm.instance.update_Level();
-            MainForm.instance.closeConnection();
+            ExercisesForm.instance.openConnection();
+            ExercisesForm.instance.update_Score(score4, 4);
+            ExercisesForm.instance.update_Level();
+            ExercisesForm.instance.closeConnection();
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)

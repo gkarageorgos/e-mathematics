@@ -1,7 +1,7 @@
 ﻿
 namespace e_math
 {
-    partial class newTaskForm
+    partial class FinalTestForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace e_math
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(newTaskForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinalTestForm));
             this.answerButton = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
@@ -186,7 +186,7 @@ namespace e_math
             this.answe5BTextBox.Size = new System.Drawing.Size(93, 30);
             this.answe5BTextBox.TabIndex = 38;
             // 
-            // newTaskForm
+            // FinalTestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -206,9 +206,9 @@ namespace e_math
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.answerButton);
-            this.Name = "newTaskForm";
+            this.Name = "FinalTestForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "newTaskForm";
+            this.Text = "FinalTestForm";
             this.Load += new System.EventHandler(this.newTaskForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

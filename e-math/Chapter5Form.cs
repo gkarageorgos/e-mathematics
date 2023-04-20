@@ -26,7 +26,7 @@ namespace e_math
             richTextBox2.SelectedRtf = Properties.Resources.chapter5_2;
             richTextBox3.SelectedRtf = Properties.Resources.chapter5_3;
             usernameTextBox.Text = username;
-            scoreTextBox.Text = MainForm.instance.Scores[4].ToString() + " /20";
+            scoreTextBox.Text = ExercisesForm.instance.Scores[4].ToString() + " /20";
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -62,10 +62,10 @@ namespace e_math
                 answer3TextBox.BackColor = Color.FromArgb(250, 128, 114);
             }
             scoreTextBox.Text = score5.ToString() + " /20";
-            MainForm.instance.openConnection();
-            MainForm.instance.update_Score(score5, 5);
-            MainForm.instance.update_Level();
-            MainForm.instance.closeConnection();
+            ExercisesForm.instance.openConnection();
+            ExercisesForm.instance.update_Score(score5, 5);
+            ExercisesForm.instance.update_Level();
+            ExercisesForm.instance.closeConnection();
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)

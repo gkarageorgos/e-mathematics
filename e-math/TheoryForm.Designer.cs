@@ -1,7 +1,7 @@
 ﻿
 namespace e_math
 {
-    partial class Theory
+    partial class TheoryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -71,7 +71,7 @@ namespace e_math
             this.richTextBox1.Text = "Χρήσιμες οδηγίες\nΒημα 1: Πατώντας το κουμπί θεωρία, κάντε επανάληψη στο κεφάλαιο " +
     "που επιθυμείτε. \nΒημα 2: Αφού κατανοήσετε τη θεωρία προχωρήστε στις Ασκήσεις.";
             // 
-            // Theory
+            // TheoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,9 +79,9 @@ namespace e_math
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.exercisesΒutton);
             this.Controls.Add(this.theoryButton);
-            this.Name = "Theory";
+            this.Name = "TheoryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Theory";
+            this.Text = "TheoryForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Theory_FormClosed);
             this.Load += new System.EventHandler(this.Theory_Load);
             this.ResumeLayout(false);

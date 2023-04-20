@@ -1,7 +1,7 @@
 ﻿
 namespace e_math
 {
-    partial class MainForm
+    partial class ExercisesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace e_math
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExercisesForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.chapter5Button = new System.Windows.Forms.Button();
             this.chapter4Button = new System.Windows.Forms.Button();
@@ -212,7 +212,7 @@ namespace e_math
             this.level2Button.UseVisualStyleBackColor = false;
             this.level2Button.Click += new System.EventHandler(this.level2Button_Click);
             // 
-            // MainForm
+            // ExercisesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -225,9 +225,9 @@ namespace e_math
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "MainForm";
+            this.Name = "ExercisesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
+            this.Text = "ExercisesForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

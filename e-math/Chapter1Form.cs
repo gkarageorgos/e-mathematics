@@ -23,7 +23,7 @@ namespace e_math
         {
             pictureBox1.ImageLocation = "..//..//pictures/kyklos.png";
             usernameTextBox.Text = username;
-            scoreTextBox.Text = MainForm.instance.Scores[0].ToString() + " /20";
+            scoreTextBox.Text = ExercisesForm.instance.Scores[0].ToString() + " /20";
         }
 
         private void answerButton_Click(object sender, EventArgs e)
@@ -62,10 +62,10 @@ namespace e_math
 
             scoreTextBox.Text = score1.ToString() + " /20";
 
-            MainForm.instance.openConnection();
-            MainForm.instance.update_Score(score1, 1);
-            MainForm.instance.update_Level();
-            MainForm.instance.closeConnection();
+            ExercisesForm.instance.openConnection();
+            ExercisesForm.instance.update_Score(score1, 1);
+            ExercisesForm.instance.update_Level();
+            ExercisesForm.instance.closeConnection();
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)

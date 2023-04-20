@@ -46,7 +46,7 @@ namespace e_math
                 String role = reader.GetString(2);
                 if (role == "student")
                 {
-                    new Theory(username).Show();
+                    new TheoryForm(username).Show();
                 }
                 if (role == "teacher")
                 {

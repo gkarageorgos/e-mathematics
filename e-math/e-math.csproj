@@ -155,17 +155,17 @@
     <Compile Include="IntroductionForm.Designer.cs">
       <DependentUpon>IntroductionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="ExercisesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="ExercisesForm.Designer.cs">
+      <DependentUpon>ExercisesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="newTaskForm.cs">
+    <Compile Include="FinalTestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="newTaskForm.Designer.cs">
-      <DependentUpon>newTaskForm.cs</DependentUpon>
+    <Compile Include="FinalTestForm.Designer.cs">
+      <DependentUpon>FinalTestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -182,11 +182,11 @@
     <Compile Include="TeacherForm.Designer.cs">
       <DependentUpon>TeacherForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Theory.cs">
+    <Compile Include="TheoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Theory.Designer.cs">
-      <DependentUpon>Theory.cs</DependentUpon>
+    <Compile Include="TheoryForm.Designer.cs">
+      <DependentUpon>TheoryForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Chapter1Form.resx">
       <DependentUpon>Chapter1Form.cs</DependentUpon>
@@ -233,11 +233,11 @@
     <EmbeddedResource Include="IntroductionForm.resx">
       <DependentUpon>IntroductionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="ExercisesForm.resx">
+      <DependentUpon>ExercisesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newTaskForm.resx">
-      <DependentUpon>newTaskForm.cs</DependentUpon>
+    <EmbeddedResource Include="FinalTestForm.resx">
+      <DependentUpon>FinalTestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -255,8 +255,8 @@
     <EmbeddedResource Include="TeacherForm.resx">
       <DependentUpon>TeacherForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Theory.resx">
-      <DependentUpon>Theory.cs</DependentUpon>
+    <EmbeddedResource Include="TheoryForm.resx">
+      <DependentUpon>TheoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="homework\chapter5-1.rtf" />
     <None Include="homework\chapter5-2.rtf" />

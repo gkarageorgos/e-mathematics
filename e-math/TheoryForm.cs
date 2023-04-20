@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace e_math
 {
-    public partial class Theory : Form
+    public partial class TheoryForm : Form
     {
         private String username;
         private int[] scores = new int[6];
         private int score;
         private int level;
-        public Theory(String username)
+        public TheoryForm(String username)
         {
             InitializeComponent();
             this.username = username;
@@ -31,7 +31,7 @@ namespace e_math
         private void exercisesΒutton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new MainForm(username, scores, score, level).Show();
+            new ExercisesForm(username, scores, score, level).Show();
         }
 
         private void Theory_FormClosed(object sender, FormClosedEventArgs e)

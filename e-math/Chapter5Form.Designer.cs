@@ -174,7 +174,7 @@ namespace e_math
             this.helpToolStripMenuItem});
             this.helpMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.helpMenuStrip.Name = "helpMenuStrip";
-            this.helpMenuStrip.Size = new System.Drawing.Size(723, 28);
+            this.helpMenuStrip.Size = new System.Drawing.Size(723, 30);
             this.helpMenuStrip.TabIndex = 38;
             this.helpMenuStrip.Text = "helpMenuStrip";
             // 
@@ -183,7 +183,7 @@ namespace e_math
             this.helpToolStripMenuItem.BackColor = System.Drawing.Color.Green;
             this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
             this.helpToolStripMenuItem.Text = "Θεωρία";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
@@ -209,7 +209,7 @@ namespace e_math
             this.MainMenuStrip = this.helpMenuStrip;
             this.Name = "Chapter5Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Πολλαπλασιασμος κλασμάτων";
+            this.Text = "Πολλαπλασιασμός κλασμάτων";
             this.Load += new System.EventHandler(this.Chapter5Form_Load);
             this.helpMenuStrip.ResumeLayout(false);
             this.helpMenuStrip.PerformLayout();

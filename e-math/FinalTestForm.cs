@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace e_math
 {
-    public partial class newTaskForm : Form
+    public partial class FinalTestForm : Form
     {
         private int score = 0;
-        public newTaskForm()
+        public FinalTestForm()
         {
             InitializeComponent();
         }
