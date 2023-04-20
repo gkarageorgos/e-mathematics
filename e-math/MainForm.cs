@@ -56,32 +56,32 @@ namespace e_math
 
         private void chapter1Button_Click(object sender, EventArgs e)
         {
-            new Chapter1TheoryForm(username).Show();
+            new Chapter1Form(username).Show();
         }
 
         private void chapter2Button_Click(object sender, EventArgs e)
         {
-            new Chapter2TheoryForm(username).Show();
+            new Chapter2Form(username).Show();
         }
 
         private void chapter3Button_Click(object sender, EventArgs e)
         {
-            new Chapter3TheoryForm(username).Show();
+            new Chapter3Form(username).Show();
         }
 
         private void chapter4Button_Click(object sender, EventArgs e)
         {
-            new Chapter4TheoryForm(username).Show();
+            new Chapter4Form(username).Show();
         }
 
         private void chapter5Button_Click(object sender, EventArgs e)
         {
-            new Chapter5TheoryForm(username).Show();
+            new Chapter5Form(username).Show();
         }
 
         private void chapter6Button_Click(object sender, EventArgs e)
         {
-            new Chapter6TheoryForm(username).Show();
+            new Chapter6Form(username).Show();
         }
 
         private void level2Button_Click(object sender, EventArgs e)

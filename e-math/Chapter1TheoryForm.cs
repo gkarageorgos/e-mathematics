@@ -12,21 +12,14 @@ namespace e_math
 {
     public partial class Chapter1TheoryForm : Form
     {
-        private String username;
-        public Chapter1TheoryForm(String username)
+        public Chapter1TheoryForm()
         {
             InitializeComponent();
-            this.username = username;
         }
 
         private void Chapter1TheoryForm_Load(object sender, EventArgs e)
         {
             pictureBox1.ImageLocation = "..//..//help//chapter1.png";
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new Chapter1Form(username).Show();
         }
     }
 }

@@ -64,5 +64,10 @@ namespace e_math
             MainForm.instance.update_Level();
             MainForm.instance.closeConnection();
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Chapter3TheoryForm().Show();
+        }
     }
 }
