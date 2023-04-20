@@ -30,6 +30,7 @@ namespace e_math
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.chapter5Button = new System.Windows.Forms.Button();
             this.chapter4Button = new System.Windows.Forms.Button();
@@ -215,6 +216,7 @@ namespace e_math
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(747, 667);
             this.Controls.Add(this.level2Button);
             this.Controls.Add(this.label3);

@@ -29,6 +29,7 @@ namespace e_math
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chapter3Form));
             this.label2 = new System.Windows.Forms.Label();
             this.scoreTextBox = new System.Windows.Forms.TextBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
@@ -190,6 +191,7 @@ namespace e_math
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(723, 684);
             this.Controls.Add(this.correctRadioButton);
             this.Controls.Add(this.falseRadioButton);

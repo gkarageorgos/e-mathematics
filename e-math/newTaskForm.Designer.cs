@@ -190,6 +190,7 @@ namespace e_math
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(723, 739);
             this.Controls.Add(this.answe5BTextBox);
             this.Controls.Add(this.answer5ATextBox);

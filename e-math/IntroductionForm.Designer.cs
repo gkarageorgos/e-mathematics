@@ -54,9 +54,9 @@ namespace e_math
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(27, 79);
+            this.panel1.Location = new System.Drawing.Point(29, 82);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(647, 213);
+            this.panel1.Size = new System.Drawing.Size(647, 197);
             this.panel1.TabIndex = 2;
             // 
             // label2
@@ -77,7 +77,7 @@ namespace e_math
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(26, 19);
+            this.label1.Location = new System.Drawing.Point(39, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(535, 51);
             this.label1.TabIndex = 0;
