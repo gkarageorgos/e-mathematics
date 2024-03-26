@@ -103,7 +103,7 @@ namespace e_math
             // correctRadioButton
             // 
             this.correctRadioButton.AutoSize = true;
-            this.correctRadioButton.Location = new System.Drawing.Point(641, 330);
+            this.correctRadioButton.Location = new System.Drawing.Point(641, 357);
             this.correctRadioButton.Name = "correctRadioButton";
             this.correctRadioButton.Size = new System.Drawing.Size(70, 21);
             this.correctRadioButton.TabIndex = 30;
